@@ -1,0 +1,19 @@
+GET  http://localhost:8080/app/todos
+
+###
+POST http://localhost:8080/app/cadastro
+Content-Type: application/json
+
+{
+    "login":"Jeferson",
+    "nomeAplicativo":"Ferreira",
+    "senha":"06/02/1991",
+    "url":"teste"
+}
+###
+GET  http://localhost:8080/app/detalhes/10
+
+###
+GET http://localhost:8080/deletar/2
+
+alisson.22559@gmail.com
