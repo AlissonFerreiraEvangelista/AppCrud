@@ -1,10 +1,14 @@
-package br.com.appcrud.crud;
+package br.com.appcrud.crud.entity;
 
+
+import java.time.LocalDate;
+import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,11 +20,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class CrudEntidade {
+@Table(name = "TB_PESSOA")
+public class PessoaEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    UUID id;
+
     String nome;
+
     String sobreNome;
+    
+    LocalDate dataNascimento;
     
 }

@@ -1,19 +1,35 @@
-GET  http://localhost:8080/app/todos
+@apiurl = http://localhost:8080
+
+### 
+GET  {{apiurl}}/auth/findall
+Content-Type: application/json
+Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGlzc29ub24iLCJleHAiOjE2NjQ4Mjc1NjB9.Om7_pS9iAyDwhQ56Ltir3Co_IuVZ6n6yatx7-UcaJXMQ2PaLi-tYXXHHQUZ_ap8YqcPUcu6Sv6M6L-1PnnWXOg
 
 ###
-POST http://localhost:8080/app/cadastro
+GET  http://localhost:8080/crud/findall
+Content-Type: application/json
+Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGlzc29ub24iLCJleHAiOjE2NjQ4Mjc1NjB9.Om7_pS9iAyDwhQ56Ltir3Co_IuVZ6n6yatx7-UcaJXMQ2PaLi-tYXXHHQUZ_ap8YqcPUcu6Sv6M6L-1PnnWXOg
+
+###
+POST {{apiurl}}/login
 Content-Type: application/json
 
 {
-    "login":"Jeferson",
-    "nomeAplicativo":"Ferreira",
-    "senha":"06/02/1991",
-    "url":"teste"
+    "username":"Alissonon",
+    "password":"2211"
+
 }
-###
-GET  http://localhost:8080/app/detalhes/10
+
 
 ###
-GET http://localhost:8080/deletar/2
+POST {{apiurl}}/crud/register
+Content-Type: application/json
+Authorization:yJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGlzc29ub24iLCJleHAiOjE2NjQ1NzE2NTV9.aywupx3VRPkHykmVnkIAfRN0adXLY6JC_SJqSRvt4oQYj5Z9qPiAOes4wFDfXr0u_YoKdzSU1O8gAqfSlEYsBg
 
-alisson.22559@gmail.com
+{
+    "nome":"Alissonon",
+    "sobrenome":"2211",
+    "dataNascimento":"12-01-2022"
+
+}
+
