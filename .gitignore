@@ -32,6 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
-.properties
-/constants/
-/resources/application.properties
+*.properties
+**/constants
+**/resources
