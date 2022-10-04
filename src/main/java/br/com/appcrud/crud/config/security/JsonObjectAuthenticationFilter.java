@@ -16,8 +16,8 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import br.com.appcrud.crud.dto.UserLoginCredentialsDto;
 import br.com.appcrud.crud.entity.UserEntity;
-import dto.UserLoginCredentialsDto;
 import lombok.RequiredArgsConstructor;
 
 

@@ -1,4 +1,4 @@
-package dto;
+package br.com.appcrud.crud.dto;
 
 
 
